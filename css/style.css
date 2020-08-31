@@ -1,15 +1,66 @@
 @charset "utf-8";
 
-body{
+/* 全体の設定 */
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	width: 100vw;
 	line-height: 1.7;
 	font-size: 16px;
-	font-family: -apple-system, BlinkMac SystemFont, "Helvetica Neue", "游ゴシック Medium", YuGothic, YuGothicM, "Hiragino Kaku Gothic ProN", Meiryo, sans-serif;
+	font-family: -apple-system, BlinkMac SystemFont, "Helvetica Neue", 'Noto Sans JP', "ヒラギノ角ゴ ProN W3",'ヒラギノ角ゴ W3', "Hiragino Kaku Gothic ProN", "メイリオ", Meiryo, sans-serif;
 	color: #000;
 	background-color: #F2EDDF;
 }
 
 /* header */
 header {
-	display: flex;
 	background-color: #fff;
+	display: flex;
+	align-items: center;
+}
+header h1 {
+	margin-left: 5vw;
+}
+header h1 img {
+	width: 17vw;
+}
+
+/* ナビゲーションの装飾 */
+header nav {
+	padding-top: 3vw;
+}
+header nav ul {
+	list-style: none;
+}
+header nav ul li {
+	display: inline-block;
+}
+header nav ul li img {
+	width: 11vw;
+}
+
+/* main */
+main {
+	width: 80vw;
+	margin: 0 auto;
+}
+
+/* top */
+.top {
+	margin-top: 5vw;
+}
+.top {
+display: flex;
+}
+.top p span {
+	font-size: 13px;
+}
+.top .top-img img {
+	text-align: right;
+	width: 600px;
+	margin-left: 15px;
 }
