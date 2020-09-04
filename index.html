@@ -3,7 +3,8 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<meta name="description" content="野方駅徒歩8分、小動物と小鳥の専門病院「野方バードクリニック | Nogata Bird Clinic です。">
+	<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&display=swap" rel="stylesheet">
+	<meta name="description" content="野方駅徒歩7分、小動物と小鳥の専門病院「野方バードクリニック」 Nogata Bird Clinic です。">
 	<meta name="keywords" content="野方,杉並,動物病院,鳥,小鳥,小動物,インコ,オウム,セキセイ,文鳥,ウサギ,ハムスター,デグー,チンチラ">
 	<title>野方バードクリニック | Nogata Bird Clinic</title>
 	<link rel="stylesheet" href="./css/normalize.css">
@@ -12,96 +13,183 @@
 <body>
 
 	<header>
-		<h1>
-			<img src="./img/logo.png" alt="野方バードクリニックロゴ">
-		</h1>
-		<nav>
-			<ul class="gnav-list">
-				<li><a href="#"><img src="./img/btn_home.png" alt="">ホーム</a></li>
-				<li><a href="#"><img src="./img/btn_guidance.png" alt="">診療について</a></li>
-				<li><a href="#"><img src="./img/btn_stuff.png" alt="">スタッフ紹介</a></li>
-				<li><a href="#"><img src="./img/btn_qa.png" alt="">こんなときは</a></li>
-				<li><a href="#"><img src="./img/btn_access.png" alt="">アクセス</a></li>
-				<li><a href="#"><img src="./img/btn_recruitment.png" alt="">求人情報</a></li>
-			</ul>
-		</nav>
+			<h1>
+				<a href="./index.html"><img src="./img/logo大-01.png" alt="野方バードクリニックロゴ"></a>
+			</h1>
+			<!-- グローバルナビ -->
+			<nav>
+				<ul class="gnav-list">
+					<li><a href="./index.html"><img src="./img/btn_home.png" alt="ホーム"></a></li>
+					<li><a href="./guidance/index.html"><img src="./img/btn_guidance.png" alt="診療について"></a></li>
+					<li><a href="./stuff/index.html"><img src="./img/btn_stuff.png" alt="スタッフ紹介"></a></li>
+					<li><a href="./access/index.html"><img src="./img/btn_access.png" alt="アクセス"></a></li>
+					<li><a href="./careers/index.html"><img src="./img/btn_recruitment.png" alt="求人情報"></a></li>
+				</ul>
+			</nav>
 	</header>
-	
-	<section>
-<p>動物病院でも数少ない小鳥と小動物の専門病院です。<br>
-愛鳥の病気や健康診断、心配事のご相談に応じます。<br>
-※電話のみでの飼育相談、病気の相談は行っておりません。</p>
 
-<p>TEL:03-3461-8005</p>
-</section>
-<section>
-<p>2020年8月25日（月）～8月26日（火）は休診とさせていただきます。<br>
-ご了承ください。</p>
-</section>
-<section>
-スタッフ募集
-正社員・パート・アルバイトの認定動物看護師さん・獣医師さんを募集しています。
+	<main>
+		<section class="catch">
+			<div class="catch-txt">
+				<h2>当院について</h2>
+				<p>野方バードクリニックは、<br>
+					中野区野方にある小鳥と小動物の専門病院です。<br>
+				愛鳥の病気や心配事のご相談・健康診断等承ります。<br>
+				<span>※ 電話のみでのご相談は承っておりません。</span></p>
+			</div>
+			<section class="catch-img">
+				<img src="./img/sazanami.jpg" alt="サザナミインコ">
+			</section>
+		</section>
 
-小鳥や小さな動物たちが大好きで、やる気がある方。
-病院勤務経験者歓迎です!
-動物看護師さんは認定資格が必要です。
+		<section class="info">
+			<div class="info-news">
+				<h3>お知らせ</h3>
+				<dl>
+					<dt>2020.07.30</dt>
+					<dd>お盆期間の入院について</dd>
+					<dt>2020.07.25</dt>
+					<dd>8月の診療時間について</dd>
+					<dt>2020.07.02</dt>
+					<dd>熱中症にご注意ください</dd>
+					<dt>2020.06.25</dt>
+					<dd>7月の診療時間について</dd>
+					<dt>2020.06.03</dt>
+					<dd>6月26日（金）臨時休診いたします</dd>
+				</dl>
+			</div>
+			<div class="info-schedule">
+				<h3>診療のご案内</h3>
+				<table>
+					<tr>
+						<th class="reception-time">受付時間</th>
+						<th>月</th>
+						<th>火</th>
+						<th>水</th>
+						<th>木</th>
+						<th>金</th>
+						<th>土</th>
+						<th class="sun">日</th>
+					</tr>
+					<tr>
+						<th>10:00〜13:00</th>
+						<td>●</td>
+						<td>●</td>
+						<td>−</td>
+						<td>●</td>
+						<td>●</td>
+						<td>●</td>
+						<td>−</td>
+					</tr>
+					<tr>
+						<th class="time">15:00〜18:00</th>
+						<td>●</td>
+						<td>●</td>
+						<td>−</td>
+						<td>●</td>
+						<td>●</td>
+						<td>−</td>
+						<td class="bottom-right">−</td>
+					</tr>
+				</table>
+				<p class="reserved">
+					<span class="tel">TEL．</span>01-2345-6789<span class="appointment">【予約制】</span>
+				</p>
+				<p>受付時間：10:00～13:00／15:00～18:00</p>
+				<p>お電話でご予約のうえお越しください。<br>
+					水曜・土曜午後・日曜・祝日は休診です。</p>
+			</div>
+		</section>
+	<section class="target">
+		<h3>診療動物</h3>
+	<table>
+		<tr>
+			<th class="bird">鳥類</th>
+			<td class="bird-data">
+				セキセイインコ、ラブバード類、オカメインコ、グラスパラキート類、ロリキート類、ホンセイインコ類、メキシコインコ、オキナインコ、オグロインコ、セネガルパロット、その他中型インコ類、白色・黒色オウム類、 オオハナインコ、 ボウシインコ類、コンゴウインコ類、その他大型インコ・オウム類等<br>
+				ブンチョウ、ジュウシマツ、その他フィンチ類、カナリヤ、キュウカンチョウ、メジロ、ホオジロ、マヒワ、ウソ<br>
+				その他飼育野鳥（飼育許可証、輸入証明証があるものに限る）等<br>
+				ニワトリ、ウズラ、チャボ<br>
+				ハト、ウスユキバト等<br>
+				アヒル、コールダック、ガチョウ、アイガモ等
+			</td>
+		</tr>
 
+		<tr>
+			<th>
+				小型げっ歯類
+			</th>
+			<td>
+				ゴールデンハムスター、ジャンガリアンハムスター、キャンベリーハムスター、ロボロフスキーハムスター、チャイニーズハムスター、クロハラハムスター等<br>
+				チンチラ、デグー、モルモット、シマリス、タイワンリス、ミケリス、エゾリス等、プレーリードック、ジリス等
+			</td>
+		</tr>
+		<tr>
+			<th class="etc">その他</th>
+			<td class="etc-data">
+				ウサギ
+			</td>
+		</tr>
+	</table>
+	</section>
 
-詳しくはメールにてお問い合わせください。
-その後面談をいたします。
-nogatabird☆12345.co.jp
-（↑の☆マークを@に変更し、件名を【スタッフ募集について】として送信してください）
-</section>
-<section>
-診療時間
-AM10:00～PM1:00
-PM3:00～PM6:00
-水曜・日曜・祭日休診
-予約制
+	</main>
 
-前の方の診察状況により予約時間に診察が開始できず、お待ちいただく場合もあります。
-お時間の余裕をもってご来院をお願いいたします。
-</section>
-<section>
-予約方法
-TEL:03-1234-5678
-AM10:00～PM1:00
-PM3:00～PM6:00
-水曜・日曜・祝日は休診のため電話に出られません
-開院時間内のご連絡をお願いします。
-</section>
-
-
-診療動物
-小鳥と小動物
-
-
-オウム目
-セキセイインコ、ラブバード類、オカメインコ、グラスパラキート類、ロリキート類、ホンセイインコ類、メキシコインコ、オキナインコ、オグロインコ、セネガルパロット、その他中型インコ類、白色・黒色オウム類、 オオハナインコ、 ボウシインコ類、コンゴウインコ類、その他大型インコ・オウム類等
-
-スズメ目
-ブンチョウ、ジュウシマツ、その他フィンチ類、カナリヤ、キュウカンチョウ、メジロ、ホオジロ、マヒワ、ウソ
-その他飼育野鳥（飼育許可証、輸入証明証があるものに限る）等
-
-
-キジ目
-ニワトリ、ウズラ、チャボ
-
-ハト目
-ハト、ウスユキバト等
-
-カモ目
-アヒル、コールダック、ガチョウ、アイガモ等
-
-小型げっ歯類
-げっ歯目
-ゴールデンハムスター、ジャンガリアンハムスター、キャンベリーハムスター、ロボロフスキーハムスター、チャイニーズハムスター、クロハラハムスター等
-
-その他
-チンチラ、デグー、モルモット、シマリス、タイワンリス、ミケリス、エゾリス等、プレーリードック、ジリス等
-
-
-ウサギ
-
+	<footer>
+		<div class="footer-info">
+			<section class="footer-link">
+				<a href="./index.html"><img src="./img/logo大-01.png" alt="野方バードクリニックロゴ"></a>
+				<p class="footer-btn"><a href="#">アクセス</a></p>
+				<p class="footer-btn"><a href="#">診療について</a></p>
+			</section>
+			<section>
+				<div class="info-schedule">
+					<table>
+						<tr>
+							<th class="reception-time">受付時間</th>
+							<th>月</th>
+							<th>火</th>
+							<th>水</th>
+							<th>木</th>
+							<th>金</th>
+							<th>土</th>
+							<th class="sun">日</th>
+						</tr>
+						<tr>
+							<th>10:00〜13:00</th>
+							<td>●</td>
+							<td>●</td>
+							<td>−</td>
+							<td>●</td>
+							<td>●</td>
+							<td>●</td>
+							<td>−</td>
+						</tr>
+						<tr>
+							<th class="time">15:00〜18:00</th>
+							<td>●</td>
+							<td>●</td>
+							<td>−</td>
+							<td>●</td>
+							<td>●</td>
+							<td>−</td>
+							<td class="bottom-right">−</td>
+						</tr>
+					</table>
+						<p class="reserved">
+							<span class="tel">TEL．</span>01-2345-6789<span class="appointment">【予約制】</span>
+						</p>
+						<p>当院は完全予約制です。ご来院前に電話でご予約ください。<br></p>
+						<address>
+							<p>野方バードクリニック／〒165-0027 東京都杉並区野方7-6-5
+							</p>
+						</address>
+				</div>
+			</section>
+		</div>
+		<section>
+			<p class="copyright"><small>&copy; Nogata Bird Clinic.</small></p>
+		</section>
+	</footer>
 </body>
 </html>
