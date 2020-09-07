@@ -27,7 +27,7 @@ header h1 {
 	margin-left: 5vw;
 }
 header h1 img {
-	width: 17vw;
+	width: 200px;
 }
 
 /* ナビゲーションの装飾 */
@@ -42,7 +42,7 @@ header nav ul li {
 	display: inline-block;
 }
 header nav ul li img {
-	width: 10vw;
+	width: 130px;
 	margin: 0 1vw;
 }
 
