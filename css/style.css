@@ -5,6 +5,8 @@
 	box-sizing: border-box;
 	margin: 0;
 	padding: 0;
+	list-style: none;
+	text-decoration: none;
 }
 
 body {
@@ -18,35 +20,174 @@ body {
 
 /* header */
 header {
+	width: 100%;
 	background-color: #fff;
-	display: flex;
-	justify-content: space-between;
 	align-items: center;
 }
-header h1 {
-	margin-left: 5vw;
+header .header-container {
+	padding: 0 50px;
+	display: flex;
+	justify-content: space-between;
+	align-items: flex-end;
 }
 header h1 img {
 	width: 200px;
+	margin-right: 5vw;
 }
 
 /* ナビゲーションの装飾 */
-header nav {
-	padding-top: 3vw;
-	margin-right: 5vw;
-}
-header nav ul {
+header .pc-nav ul {
 	list-style: none;
+	display: flex;
+	flex-wrap: wrap;
 }
-header nav ul li {
-	display: inline-block;
+header .pc-nav ul li {
+	padding-bottom: 5vh;
 }
-header nav ul li img {
+header .pc-nav ul li img {
 	width: 130px;
-	margin: 0 1vw;
+}
+/* pcのときmobileナビは消去 */
+.mobile-nav {
+	display: none;
 }
 
-/* main */
+/* レスポンシブ対応 - グローバルナビ */
+@media screen and (max-width: 769px) {
+	.pc-nav {
+		display: none;
+	}
+	#gnav-toggle {
+		position: relative;
+		display: block;
+		width: 30px;
+		height: 25px;
+		margin: 0 0 5vh auto;
+	}
+	#gnav-toggle span {
+		position: absolute;
+		top: 50%;
+		left: 0;
+		display: block;
+		width: 100%;
+		height: 2px;
+		background-color: rgb(150, 120, 60);
+		transform: translateY(-50%);
+		-webkit-transform: translateY(-50%);
+		-moz-transform: translateY(-50%);
+		-ms-transform: translateY(-50%);
+		-o-transform: translateY(-50%);
+	}
+	#gnav-toggle::before,
+	#gnav-toggle::after {
+		content: '';
+		display: block;
+		width: 100%;
+		height: 2px;
+		background-color: rgb(150, 120, 60);
+	}
+	#gnav-toggle::before {
+		position: absolute;
+		top: 0;
+		left: 0;
+	}
+	#gnav-toggle::after {
+		position: absolute;
+		bottom: 0;
+		left: 0;
+	}
+
+	/* モバイルのメニュー */
+	.mobile-nav {
+		z-index: 1;
+		position: fixed;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100vh;
+		display: block;
+		background: rgba(75, 60, 29, 0.8);
+		transition: all 0.3s ease-in-out;
+		-webkit-transition: all 0.3s ease-in-out;
+		-moz-transition: all 0.3s ease-in-out;
+		-ms-transition: all 0.3s ease-in-out;
+		-o-transition: all 0.3s ease-in-out;
+		opacity: 0;
+		transform: translateX(100%);
+		-webkit-transform: translateX(100%);
+		-moz-transform: translateX(100%);
+		-ms-transform: translateX(100%);
+		-o-transform: translateX(100%);
+}
+	.mobile-nav ul {
+		padding: 0;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		height: 100%;
+	}
+	.mobile-nav li {
+		margin: 0;
+		padding: 0;
+	}
+	.mobile-nav li span {
+		font-size: 15px;
+		color: #fff;
+	}
+	.mobile-nav li a,
+	.mobile-nav li span {
+		display: block;
+		padding: 20px 0;
+	}
+	.mobile-nav li a {
+		color: #fff;
+	}
+
+	/* closeマーク装飾 */
+	.mobile-nav .close {
+		position: relative;
+		padding-left: 1.5em;
+	}
+	/* バツ線 */
+	.mobile-nav .close::before,
+	.mobile-nav .close::after {
+		content: '';
+		position: absolute;
+		top: 50%;
+		left: 0;
+		display: block;
+		width: 16px;
+		height: 1px;
+		background: #fff;
+	}
+	.mobile-nav .close::before {
+		transform: rotate(45deg);
+		-webkit-transform: rotate(45deg);
+		-moz-transform: rotate(45deg);
+		-ms-transform: rotate(45deg);
+		-o-transform: rotate(45deg);
+	}
+	.mobile-nav .close::after {
+		transform: rotate(-45deg);
+		-webkit-transform: rotate(-45deg);
+		-moz-transform: rotate(-45deg);
+		-ms-transform: rotate(-45deg);
+		-o-transform: rotate(-45deg);
+	}
+	
+	/* jQueryのtoggleの指定 */
+	.toggle {
+		transform: translateX(0);
+		-webkit-transform: translateX(0);
+		-moz-transform: translateX(0);
+		-ms-transform: translateX(0);
+		-o-transform: translateX(0);
+		opacity: 1;
+	}
+}
+
+
 main {
 	width: 80vw;
 	margin: 0 auto;
@@ -58,6 +199,7 @@ main {
 	margin-bottom: -0.5vw;
 	display: flex;
 	justify-content: space-between;
+	flex-wrap: wrap;
 }
 h2 {
 	font-size: 2em;
@@ -70,13 +212,14 @@ h2 {
 	font-size: 14px;
 }
 .catch .catch-img img {
-	width: 45vw;
-	margin-left: 15px;
+	width: 40vw;
+	/* flex-shrink: 2; */
 }
 
 /* info */
 .info {
 	display: flex;
+	flex-wrap: wrap;
 	background-color: rgb(227, 224, 198);
 	margin-top: 2vw;
 	padding: 3vw 4vw;
@@ -89,7 +232,7 @@ h3 {
 }
 .info .info-news {
 	margin-right: 5vw;
-	flex-basis: 35%;
+	/* flex-basis: 35%; */
 }
 .info dl dt {
 	color:#7E7B2D;
@@ -256,29 +399,32 @@ h3 {
 
 
 /* footer */
-.footer-info {
-	margin-top: 4vw;
-	padding: 3vw 0;
+footer {
 	background-color: #fff;
+	padding-top: 1vh;
+	margin-top: 5vh;
+}
+.footer-info {
 	display: flex;
 	justify-content: space-around;
+	flex-wrap: wrap;
+	margin: 4vh 50px;
 }
 footer .footer-link {
 	text-align: center;
 }
 footer .footer-link a img {
-	width: 20vw;
-	margin: 0 0 1.5em 7vw;
+	width: 200px;
+	margin: 0 0 1.5em 0;
 	
 }
 footer .footer-link .footer-btn {
-	width: 20vw;
+	width: 200px;
 	color: #fff;
 	font-size: 18px;
 	padding: 0.4em;
 	border-radius: 5px;
 	margin-bottom: 0.5em;
-	margin-left: 7vw;
 	background-color: #A5A36C;
 	-webkit-border-radius: 5px;
 	-moz-border-radius: 5px;

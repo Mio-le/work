@@ -9,14 +9,28 @@
 	<title>野方バードクリニック | Nogata Bird Clinic</title>
 	<link rel="stylesheet" href="../css/normalize.css">
 	<link rel="stylesheet" href="../css/style.css">
+<!-- jQuery読み込み -->
+<script src="https://code.jquery.com/jquery-2.2.4.js" integrity="sha256-iT6Q9iMJYuQiMWNd9lDyBUStIq/8PuOW33aOqmvFpqI=" crossorigin="anonymous"></script>
+<!-- モバイルナビゲーション表示・非表示 -->
+	<script>
+		$(function() {
+			const hum = $('#gnav-toggle, .close')
+			const nav = $('.mobile-nav')
+			hum.on('click', function(){
+					nav.toggleClass('toggle');
+			});
+		});
+	</script>
 </head>
 <body>
+
 	<header>
+		<div class="header-container">
 			<h1>
 				<a href="../index.html"><img src="../img/logo大-01.png" alt="野方バードクリニックロゴ"></a>
 			</h1>
 			<!-- グローバルナビ -->
-			<nav>
+			<nav class="pc-nav">
 				<ul class="gnav-list">
 					<li><a href="../index.html"><img src="../img/btn_home.png" alt="ホーム"></a></li>
 					<li><a href="../guidance/index.html"><img src="../img/btn_guidance.png" alt="診療について"></a></li>
@@ -25,7 +39,21 @@
 					<li><a href="./index.html"><img src="../img/btn_hover_recruitment.png" alt="求人情報"></a></li>
 				</ul>
 			</nav>
-	</header>
+			<nav class="mobile-nav">
+				<ul>
+					<li><a href="../index.html">ホーム</a></li>
+					<li><a href="../guidance/index.html">診療について</a></li>
+					<li><a href="../stuff/index.html">スタッフ紹介</a></li>
+					<li><a href="../access/index.html">アクセス</a></li>
+					<li><a href="./index.html">求人情報</a></li>
+					<li class="close"><span>閉じる</span></li>
+				</ul>
+			</nav>
+			<div id="gnav-toggle">
+				<span></span>
+			</div>
+		</div>
+		</header>
 
 	<main>
 		<section class="catch">
