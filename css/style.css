@@ -201,6 +201,9 @@ main {
 	justify-content: space-between;
 	flex-wrap: wrap;
 }
+.catch p {
+	padding-bottom: 1.5vh;
+}
 h2 {
 	font-size: 2em;
 	color: #855730;
@@ -213,7 +216,7 @@ h2 {
 }
 .catch .catch-img img {
 	width: 40vw;
-	/* flex-shrink: 2; */
+	min-width: 400px;
 }
 
 /* info */
