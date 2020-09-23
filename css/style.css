@@ -252,7 +252,8 @@ h2 {
 	flex-wrap: wrap;
 	justify-content: space-between;
 	background-color: rgb(227, 224, 198);
-	margin-top: 2vw;
+	width: 80vw;
+	margin-top: 2vh;
 	padding: 3vh 4vw;
 }
 h3 {
@@ -327,7 +328,7 @@ h3 {
 @media screen and (max-width:769px) {
 	.info-schedule table {
 		margin: 0 auto;
-		max-width: 75vw;
+		max-width: 70vw;
 	}
 	.info-schedule table th {
 		padding: 2vw;
