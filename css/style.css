@@ -211,6 +211,7 @@ header .pc-nav .stuff {
 main {
 	width: 80vw;
 	margin: 0 auto;
+	padding: 0;
 }
 
 /* catch */
