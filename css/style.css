@@ -25,19 +25,27 @@ header {
 	align-items: center;
 }
 header .header-container {
-	padding: 0 50px;
+	width: 85vw;
+	margin: 0 auto;
+	/* padding: 0 50px; */
 	display: flex;
-	justify-content: space-between;
+	justify-content: center;
 	align-items: flex-end;
 }
 header h1 img {
 	width: 200px;
-	margin-right: 5vw;
+	margin-right: 10vw;
+}
+
+/* header画像のレスポンシブ */
+@media screen and (max-width: 769px) {
+	header h1 img {
+		max-width: 50vw;
+	}
 }
 
 /* ナビゲーションの装飾 */
 header .pc-nav ul {
-	list-style: none;
 	display: flex;
 	flex-wrap: wrap;
 }
@@ -45,8 +53,15 @@ header .pc-nav ul li {
 	padding-bottom: 5vh;
 }
 header .pc-nav ul li img {
-	width: 130px;
+	width: 11vw;
+	min-width: 125px;
 }
+
+/* スタッフ紹介の左 */
+header .pc-nav .stuff {
+	margin-left: 2vw;
+}
+
 /* pcのときmobileナビは消去 */
 .mobile-nav {
 	display: none;
@@ -71,13 +86,18 @@ header .pc-nav ul li img {
 		display: block;
 		width: 100%;
 		height: 2px;
+		border-radius: 1px;
 		background-color: rgb(150, 120, 60);
 		transform: translateY(-50%);
 		-webkit-transform: translateY(-50%);
 		-moz-transform: translateY(-50%);
 		-ms-transform: translateY(-50%);
 		-o-transform: translateY(-50%);
-	}
+		-webkit-border-radius: 1px;
+		-moz-border-radius: 1px;
+		-ms-border-radius: 1px;
+		-o-border-radius: 1px;
+}
 	#gnav-toggle::before,
 	#gnav-toggle::after {
 		content: '';
@@ -216,16 +236,24 @@ h2 {
 }
 .catch .catch-img img {
 	width: 40vw;
-	min-width: 400px;
+	min-width: 350px;
+}
+
+/* catch部分レスポンシブ */
+@media screen and (max-width:769px) {
+	.catch .catch-img img {
+		width: 80vw;
+	}
 }
 
 /* info */
 .info {
 	display: flex;
 	flex-wrap: wrap;
+	justify-content: space-between;
 	background-color: rgb(227, 224, 198);
 	margin-top: 2vw;
-	padding: 3vw 4vw;
+	padding: 3vh 4vw;
 }
 h3 {
 	font-size: 1.5em;
@@ -233,9 +261,13 @@ h3 {
 	margin-bottom: 0.5em;
 	color: #855730;
 }
+/* お知らせ */
 .info .info-news {
 	margin-right: 5vw;
 	/* flex-basis: 35%; */
+}
+.info dl {
+	margin-bottom: 5vh;
 }
 .info dl dt {
 	color:#7E7B2D;
@@ -244,7 +276,7 @@ h3 {
 	padding-left: 1em;
 }
 
-/* info-schedule */
+/* info-schedule 診療時間table */
 .info-schedule table {
 	margin-bottom: 1vw;
 }
@@ -289,6 +321,17 @@ h3 {
 	color: #8b8b5a;
 	/* font-weight: normal; */
 	letter-spacing: normal;
+}
+
+/* 診療時間table部分レスポンシブ */
+@media screen and (max-width:769px) {
+	.info-schedule table {
+		margin: 0 auto;
+		max-width: 75vw;
+	}
+	.info-schedule table th {
+		padding: 2vw;
+	}
 }
 
 /* 診療対象　target */
@@ -404,17 +447,18 @@ h3 {
 /* footer */
 footer {
 	background-color: #fff;
-	padding-top: 1vh;
+	padding-top: 5vh;
 	margin-top: 5vh;
 }
 .footer-info {
 	display: flex;
-	justify-content: space-around;
+	justify-content: center;
 	flex-wrap: wrap;
-	margin: 4vh 50px;
+	padding: 0 5vw;
 }
 footer .footer-link {
 	text-align: center;
+	margin-right: 5vw;
 }
 footer .footer-link a img {
 	width: 200px;
@@ -427,7 +471,7 @@ footer .footer-link .footer-btn {
 	font-size: 18px;
 	padding: 0.4em;
 	border-radius: 5px;
-	margin-bottom: 0.5em;
+	margin-bottom: 1em;
 	background-color: #A5A36C;
 	-webkit-border-radius: 5px;
 	-moz-border-radius: 5px;
@@ -448,10 +492,10 @@ footer .footer-link .footer-btn a:active {
 }
 
 
-footer table {
+/* footer table {
 	margin-right: 7vw;
 	width: 50vw;
-}
+} */
 
 footer .info-schedule table td {
 	background-color: #F2EDDF;
@@ -459,6 +503,8 @@ footer .info-schedule table td {
 address {
 	font-style: normal;
 }
+
+/* copyright */
 footer .copyright {
 	padding: 1em;
 	text-align: center;
