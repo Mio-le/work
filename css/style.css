@@ -250,7 +250,7 @@ h2 {
 /* catch部分レスポンシブ */
 @media screen and (max-width:769px) {
 	.catch .catch-img img {
-		width: 100%;
+		width: 80%;
 	}
 }
 
@@ -320,6 +320,7 @@ h3 {
 	.info-schedule table {
 		margin: 0 auto;
 		max-width: 70vw;
+		font-size: 0.9em;
 	}
 	.info-schedule table th {
 		padding: 2vw;
@@ -327,7 +328,7 @@ h3 {
 	.info-schedule table td {
 		text-align: center;
 		color: #cca161;
-		font-size: 1.4em;
+		font-size: 1.2em;
 		background-color: #fff;
 	}
 }
@@ -354,7 +355,10 @@ h3 {
 @media screen and (max-width:769px) {
 	.reserved {
 		font-size: 1.7em;
-		letter-spacing: 0.05em;
+		letter-spacing: normal;
+	}
+	.reserved .appointment {
+		font-size: 0.7em;
 	}
 }
 
