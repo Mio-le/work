@@ -38,7 +38,7 @@ header h1 img {
 }
 
 /* header画像のレスポンシブ */
-@media screen and (max-width: 769px) {
+@media screen and (max-width: 896px) {
 	header h1 img {
 		max-width: 50vw;
 	}
@@ -68,7 +68,7 @@ header .pc-nav .stuff {
 }
 
 /* グローバルナビ - レスポンシブ */
-@media screen and (max-width: 769px) {
+@media screen and (max-width: 896px) {
 	.pc-nav {
 		display: none;
 	}
@@ -248,9 +248,10 @@ h2 {
 }
 
 /* catch部分レスポンシブ */
-@media screen and (max-width:769px) {
+@media screen and (max-width:896px) {
 	.catch .catch-img img {
-		width: 80%;
+		width: 80vw;
+		max-width: 100%;
 	}
 }
 
@@ -272,8 +273,8 @@ h3 {
 }
 /* お知らせ */
 .info .info-news {
+	max-width: 30vw;
 	margin-right: 5vw;
-	/* flex-basis: 35%; */
 }
 .info dl {
 	margin-bottom: 5vh;
@@ -316,10 +317,13 @@ h3 {
 }
 
 /* 診療時間table部分レスポンシブ */
-@media screen and (max-width:769px) {
+@media screen and (max-width:896px) {
+	.info .info-news {
+		max-width: 70vw;
+	}
 	.info-schedule table {
 		margin: 0 auto;
-		max-width: 70vw;
+		max-width: 65vw;
 		font-size: 0.9em;
 	}
 	.info-schedule table th {
@@ -352,7 +356,7 @@ h3 {
 }
 
 /* 診療時間下諸項目レスポンシブ */
-@media screen and (max-width:769px) {
+@media screen and (max-width:896px) {
 	.reserved {
 		font-size: 1.7em;
 		letter-spacing: normal;
@@ -521,10 +525,6 @@ footer .footer-link .footer-btn a:active {
 }
 
 
-/* footer table {
-	margin-right: 7vw;
-	width: 50vw;
-} */
 
 footer .info-schedule table td {
 	background-color: #F2EDDF;
