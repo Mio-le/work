@@ -328,7 +328,7 @@ h3 {
 	.info-schedule table {
 		/* margin: 0 auto; */
 		max-width: 72vw;
-		font-size: 0.9em;
+		font-size: 0.85em;
 	}
 	.info-schedule table th {
 		padding: 2vw;
@@ -534,11 +534,12 @@ footer .info-schedule table td {
 	background-color: #F2EDDF;
 }
 
-/* footerのtable設定レスポンシブ */
+/* footerのみのtable設定レスポンシブ */
 @media screen and (max-width:896px) {
 	footer .footer-info table {
 		/* table-layout: fixed; */
 		width: 80vw;
+		margin: 0 auto;
 	}
 }
 
