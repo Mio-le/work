@@ -67,7 +67,7 @@ header .pc-nav .stuff {
 	display: none;
 }
 
-/* レスポンシブ対応 - グローバルナビ */
+/* グローバルナビ - レスポンシブ */
 @media screen and (max-width: 769px) {
 	.pc-nav {
 		display: none;
@@ -79,6 +79,8 @@ header .pc-nav .stuff {
 		height: 25px;
 		margin: 0 0 5vh auto;
 	}
+
+	/* ハンバーガーメニュー */
 	#gnav-toggle span {
 		position: absolute;
 		top: 50%;
@@ -97,7 +99,7 @@ header .pc-nav .stuff {
 		-moz-border-radius: 1px;
 		-ms-border-radius: 1px;
 		-o-border-radius: 1px;
-}
+	}
 	#gnav-toggle::before,
 	#gnav-toggle::after {
 		content: '';
@@ -105,6 +107,11 @@ header .pc-nav .stuff {
 		width: 100%;
 		height: 2px;
 		background-color: rgb(150, 120, 60);
+		border-radius: 1px;
+		-webkit-border-radius: 1px;
+		-moz-border-radius: 1px;
+		-ms-border-radius: 1px;
+		-o-border-radius: 1px;
 	}
 	#gnav-toggle::before {
 		position: absolute;
@@ -243,7 +250,7 @@ h2 {
 /* catch部分レスポンシブ */
 @media screen and (max-width:769px) {
 	.catch .catch-img img {
-		width: 80vw;
+		width: 100%;
 	}
 }
 
@@ -308,6 +315,24 @@ h3 {
 	border-bottom-right-radius: 5px;
 }
 
+/* 診療時間table部分レスポンシブ */
+@media screen and (max-width:769px) {
+	.info-schedule table {
+		margin: 0 auto;
+		max-width: 70vw;
+	}
+	.info-schedule table th {
+		padding: 2vw;
+	}
+	.info-schedule table td {
+		text-align: center;
+		color: #cca161;
+		font-size: 1.4em;
+		background-color: #fff;
+	}
+}
+
+/* 診療時間下諸項目 */
 .reserved {
 	font-size: 2em;
 	color: #855730;
@@ -325,16 +350,14 @@ h3 {
 	letter-spacing: normal;
 }
 
-/* 診療時間table部分レスポンシブ */
+/* 診療時間下諸項目レスポンシブ */
 @media screen and (max-width:769px) {
-	.info-schedule table {
-		margin: 0 auto;
-		max-width: 70vw;
-	}
-	.info-schedule table th {
-		padding: 2vw;
+	.reserved {
+		font-size: 1.7em;
+		letter-spacing: 0.05em;
 	}
 }
+
 
 /* 診療対象　target */
 .target {
