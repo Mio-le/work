@@ -362,7 +362,7 @@ h3 {
 /* 診療時間下諸項目レスポンシブ */
 @media screen and (max-width:896px) {
 	.reserved {
-		font-size: 1.7em;
+		font-size: 1.5em;
 		letter-spacing: normal;
 	}
 	.reserved .appointment {
@@ -533,6 +533,15 @@ footer .footer-link .footer-btn a:active {
 footer .info-schedule table td {
 	background-color: #F2EDDF;
 }
+
+/* footerのtable設定レスポンシブ */
+@media screen and (max-width:896px) {
+	footer .footer-info table {
+		/* table-layout: fixed; */
+		width: 80vw;
+	}
+}
+
 address {
 	font-style: normal;
 }
