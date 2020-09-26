@@ -244,14 +244,12 @@ h2 {
 }
 .catch .catch-img img {
 	width: 40vw;
-	min-width: 350px;
 }
 
 /* catch部分レスポンシブ */
-@media screen and (max-width:896px) {
+@media screen and (max-width: 896px) {
 	.catch .catch-img img {
 		width: 80vw;
-		max-width: 100%;
 	}
 }
 
@@ -321,14 +319,17 @@ h3 {
 }
 
 /* 診療時間table部分レスポンシブ */
-@media screen and (max-width:896px) {
+@media screen and (max-width: 480px) {
 	.info .info-news {
-		max-width: 70vw;
+		max-width: 80vw;
+	}
+	.info .info-schedule {
+		max-width: 80vw;
 	}
 	.info-schedule table {
 		/* margin: 0 auto; */
-		max-width: 72vw;
-		font-size: 0.85em;
+		width: 72vw;
+		font-size: 0.8em;
 	}
 	.info-schedule table th {
 		padding: 2vw;
@@ -336,7 +337,7 @@ h3 {
 	.info-schedule table td {
 		text-align: center;
 		color: #cca161;
-		font-size: 1.1em;
+		font-size: 1em;
 		background-color: #fff;
 	}
 }
@@ -360,13 +361,16 @@ h3 {
 }
 
 /* 診療時間下諸項目レスポンシブ */
-@media screen and (max-width:896px) {
+@media screen and (max-width: 480px) {
 	.reserved {
 		font-size: 1.5em;
 		letter-spacing: normal;
 	}
+	.reserved .tel {
+		font-size: 0.6em;
+	}
 	.reserved .appointment {
-		font-size: 0.7em;
+		font-size: 0.6em;
 	}
 }
 
@@ -535,10 +539,13 @@ footer .info-schedule table td {
 }
 
 /* footerのみのtable設定レスポンシブ */
-@media screen and (max-width:896px) {
+@media screen and (max-width: 896px) {
 	footer .footer-info table {
 		/* table-layout: fixed; */
 		width: 80vw;
+		margin: 0 auto;
+	}
+	footer .footer-link {
 		margin: 0 auto;
 	}
 }
