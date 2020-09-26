@@ -319,6 +319,18 @@ h3 {
 }
 
 /* 診療時間table部分レスポンシブ */
+@media screen and (max-width: 896px) {
+	.info .info-news {
+		max-width: 80vw;
+	}
+	.info .info-schedule {
+		max-width: 80vw;
+	}
+	.info-schedule table {
+		width: 72vw;
+		font-size: 0.9em;
+	}
+}
 @media screen and (max-width: 480px) {
 	.info .info-news {
 		max-width: 80vw;
