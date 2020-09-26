@@ -540,10 +540,13 @@ footer .info-schedule table td {
 
 /* footerのみのtable設定レスポンシブ */
 @media screen and (max-width: 896px) {
+	footer .footer-info {
+		max-width: 80vw;
+		margin: 0 auto;
+	}
 	footer .footer-info table {
 		/* table-layout: fixed; */
 		width: 80vw;
-		margin: 0 auto;
 	}
 	footer .footer-link {
 		margin: 0 auto;
